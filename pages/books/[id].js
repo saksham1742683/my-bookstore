@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import books from "../../data/books";
 import styles from "../../styles/BookDetail.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 
 const BookDetail = () => {
   const router = useRouter();
@@ -15,10 +15,10 @@ const BookDetail = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <Image
+        <img
           src={book.image}
-          width={450}
-          height={450}
+          // width={450}
+          // height={450}
           alt={book.title}
           className={styles.bookImage}
         />

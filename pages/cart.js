@@ -30,7 +30,7 @@ const Cart = () => {
           <ul className={styles.cartList}>
             {cart.map((book) => (
               <li key={book.id} className={styles.cartItem}>
-                <img src="/myBook.jpg" alt={book.title} className={styles.bookImage} />
+                <img src={book.image} alt={book.title} className={styles.bookImage} />
                 <h2>{book.title}</h2>
                 <p>Author: {book.author}</p>
                 <p>Price: ₹{book.price}</p>

@@ -11,6 +11,8 @@ const Cart = () => {
     const updatedCart = cart.filter((item) => item.id !== bookId);
     setCart(updatedCart);
   };
+  // console.log(item.image);
+  console.log("saksham");
 
   return (
     <div className={styles.container}>
@@ -23,13 +25,13 @@ const Cart = () => {
         <ul className={styles.cartList}>
           {cart.map((item) => (
             <li key={item.id} className={styles.cartItem}>
-              <Image
-                src={item.image}
+              {/* <Image
+                src={item.image ||  "/images/myBook.jpg"}
                 width={100}
                 height={100}
-                alt={item.title}
+                alt="saksa"
                 className={styles.cartImage}
-              />
+              /> */}
               <div>
                 <h2>{item.title}</h2>
                 <p>{item.author}</p>

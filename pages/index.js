@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link"; 
 import styles from "../styles/Home.module.css";
 import books from "../data/books";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Home = () => {
   const [cart, setCart] = useState([]);
@@ -86,11 +86,11 @@ const Home = () => {
               <div className={styles.bookContainer}>
                 {/* note as per next new rules a should not be in link */}
                 <Link href={`/books/${book.id}`}>
-                  <Image
+                  <img
                     src={book.image || "/images/myBook.jpg"}
                     alt={book.title}
-                    width={450}
-                    height={450}
+                    // width={450}
+                    // height={450}
                     className={styles.bookImage}
                   />
                   <h2 className={styles.bookTitle}>{book.title}</h2>
