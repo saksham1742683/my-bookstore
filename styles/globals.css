@@ -1,42 +1,36 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #121212; /* Dark background */
+  --foreground: #f5f5f5; /* Light off-white text */
+  --secondary-text: #b3b3b3; /* Light grey for secondary text */
+  --accent-color: #00aaff; /* Vibrant blue for links/buttons */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #121212;
+    --foreground: #f5f5f5;
+    --secondary-text: #b3b3b3;
+    --accent-color: #00aaff;
   }
 }
 
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--foreground); /* Use the main light off-white text */
+  background: var(--background); /* Dark background */
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 a {
-  color: inherit;
+  color: var(--accent-color); /* Vibrant blue links */
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+a:hover {
+  color: #0088cc; /* Darker blue on hover */
+}
+
+p {
+  color: var(--secondary-text); /* Light grey for secondary text */
 }

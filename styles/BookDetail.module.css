@@ -1,0 +1,31 @@
+/* styles/BookDetail.module.css */
+.container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .image {
+    width: 200px;
+    height: auto;
+    margin: 1rem 0;
+  }
+  
+  .author, .price, .description {
+    color: #b3b3b3; /* Secondary text color */
+  }
+  
+  .button {
+    background-color: #00e5ff; /* Vibrant cyan */
+    color: #171717; /* Dark text color */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+  

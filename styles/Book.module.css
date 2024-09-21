@@ -1,0 +1,34 @@
+/* styles/Book.module.css */
+.container {
+    padding: 0 2rem;
+  }
+  
+  .main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  .author {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  .description {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
