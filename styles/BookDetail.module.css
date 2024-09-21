@@ -1,31 +1,50 @@
-/* styles/BookDetail.module.css */
 .container {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .image {
-    width: 200px;
-    height: auto;
-    margin: 1rem 0;
-  }
-  
-  .author, .price, .description {
-    color: #b3b3b3; /* Secondary text color */
-  }
-  
-  .button {
-    background-color: #00e5ff; /* Vibrant cyan */
-    color: #171717; /* Dark text color */
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 1rem;
-  }
-  
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+}
+
+.imageContainer {
+  flex-basis: 30%;
+  margin-right: 20px;
+}
+
+.bookImage {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contentContainer {
+  flex-basis: 70%;
+}
+
+.addToCartButton {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some space between the buttons */
+}
+
+.addToCartButton:hover {
+  background-color: #0069d9;
+}
+
+.addToFavouriteButton {
+  background-color: #ffc107;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.addToFavouriteButton:hover {
+  background-color: #e0a800;
+}

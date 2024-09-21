@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import Link from 'next/link';
-import styles from '../styles/Navbar.module.css';
+import Link from "next/link";
+import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   const [cartCount, setCartCount] = useState(0);
 
-  // Load cart count from localStorage when the component mounts
+  // load cartcount from localStorage when compnent munts
   useEffect(() => {
     const storedCart = localStorage.getItem("cart");
     if (storedCart) {

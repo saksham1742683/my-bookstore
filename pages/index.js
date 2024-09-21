@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import Link from "next/link"; // Import Link component for navigation
+import Link from "next/link"; 
 import styles from "../styles/Home.module.css";
 import books from "../data/books";
 
 const Home = () => {
   const [cart, setCart] = useState([]);
-  const [itemsToShow, setItemsToShow] = useState(10); // Show 10 book
-  const [expanded, setExpanded] = useState(false); // List is not expanded
-  const [popupVisible, setPopupVisible] = useState(false); // Controls pop-up
-  const [popupContent, setPopupContent] = useState(""); // Pop-up content (book title)
+  const [itemsToShow, setItemsToShow] = useState(10); // Show 10 
+  const [expanded, setExpanded] = useState(false); 
+  const [popupVisible, setPopupVisible] = useState(false); 
+  const [popupContent, setPopupContent] = useState(""); 
 
   // Load cart and pagination state from localStorage when the component mounts
   useEffect(() => {
