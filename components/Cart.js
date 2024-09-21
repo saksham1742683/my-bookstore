@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import Link from 'next/link';
-import styles from '../styles/Cart.module.css';
+import { useState } from "react";
+import Link from "next/link";
+import styles from "../styles/Cart.module.css";
+import Image from "next/image";
 
 const Cart = () => {
   // Get the cart from local storage or initialize it empty
@@ -15,12 +16,20 @@ const Cart = () => {
     <div className={styles.container}>
       <h1>Your Cart</h1>
       {cart.length === 0 ? (
-        <p>Your cart is empty. <Link href="/">Go back to shop</Link></p>
+        <p>
+          Your cart is empty. <Link href="/">Go back to shop</Link>
+        </p>
       ) : (
         <ul className={styles.cartList}>
           {cart.map((item) => (
             <li key={item.id} className={styles.cartItem}>
-              <img src={item.image} alt={item.title} className={styles.cartImage} />
+              <Image
+                src={item.image}
+                width={100}
+                height={100}
+                alt={item.title}
+                className={styles.cartImage}
+              />
               <div>
                 <h2>{item.title}</h2>
                 <p>{item.author}</p>
